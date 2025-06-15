@@ -16,6 +16,18 @@ This Android app captures camera frames in real-time, processes them using nativ
 -  Optimized frame-to-texture flow with minimal latency
 
 ---
+---
+
+## 🖼️ Screenshots
+
+| Raw Preview | Edge Detection View |
+|-------------|----------------------|
+| ![raw](https://github.com/user-attachments/assets/5aee1ba3-f1e2-4306-8571-316eaa9e1f3c) | ![processed](https://github.com/user-attachments/assets/dc7581d7-267c-4d46-8388-e9d4baebb9b0) |
+
+---
+
+
+
 
 ## ⚙️ Setup Instructions
 
