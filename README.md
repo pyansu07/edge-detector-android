@@ -56,6 +56,33 @@ This Android app captures camera frames in real-time, processes them using nativ
 ## 🧠 Architecture Overview
 ![Architecture](https://github.com/user-attachments/assets/494c61f1-d37c-4113-87fe-fb5504fc235a)
 
+### 🔁 Frame Flow
+
+1. **Camera2 API** (`MainActivity`)  
+   Captures real-time frames in `YUV_420_888` format using `ImageReader`.
+
+2. **YUV → NV21 Conversion**  
+   Planes of Y, U, and V are restructured in Java to NV21 byte array (Y + interleaved VU).
+
+3. **JNI Bridge** (`FrameProcessor`)  
+   Passes the `nv21[]` frame with width and height to native C++ using JNI (`native-lib.cpp`).
+
+4. **OpenCV Processing (C++)**
+   - Converts `NV21` to `BGR`
+   - Applies `cv::Canny()` for edge detection
+   - Converts result to `ARGB_8888` byte buffer for OpenGL
+
+5. **Back to Java**  
+   Returns processed `ARGB` byte array to Java using `jbyteArray`.
+
+6. **Rendering via OpenGL (`EdgeRenderer`)**
+   - Updates texture using the `ARGB` data
+   - Renders using `GLSurfaceView` with custom shaders
+   - Supports toggle between raw and edge view
+
+---
+
+
 ### 📦 Modules
 
 | Component           | Role |
