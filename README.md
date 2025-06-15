@@ -42,7 +42,7 @@ This Android app captures camera frames in real-time, processes them using nativ
 ---
 
 ## 🧠 Architecture Overview
-![Architecture](https://raw.githubusercontent.com/<username>/<repo>/main/assets/architecture.png)
+![Architecture](https://github.com/user-attachments/assets/494c61f1-d37c-4113-87fe-fb5504fc235a)
 
 ### 📦 Modules
 
