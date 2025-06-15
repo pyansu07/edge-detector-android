@@ -1,0 +1,17 @@
+# Gradle
+.gradle/
+build/
+.idea/
+local.properties
+
+# Keystore files
+*.jks
+
+# NDK & SDK paths
+.cxx/
+
+# Log/Debug files
+*.log
+
+# Generated files
+*.iml
