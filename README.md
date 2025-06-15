@@ -60,5 +60,5 @@ This Android app captures camera frames in real-time, processes them using nativ
 
 Frame processing time (ms) is logged to **Logcat** as:
 ```bash
-Frame time: 16 ms
+Frame time: xx ms
 ```
