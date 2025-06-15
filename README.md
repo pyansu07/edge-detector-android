@@ -1,4 +1,3 @@
-
 # 📸 Real-Time Edge Detection Android App
 
 This Android app captures camera frames in real-time, processes them using native C++ (OpenCV via JNI), and displays the results using OpenGL ES 2.0. It supports raw preview or edge-detected view toggle and includes FPS logging for performance insights.
@@ -43,7 +42,7 @@ This Android app captures camera frames in real-time, processes them using nativ
 ---
 
 ## 🧠 Architecture Overview
-![Gemini_Generated_Image_boihi6boihi6boih](https://github.com/user-attachments/assets/494c61f1-d37c-4113-87fe-fb5504fc235a)
+![Architecture](https://raw.githubusercontent.com/<username>/<repo>/main/assets/architecture.png)
 
 ### 📦 Modules
 
